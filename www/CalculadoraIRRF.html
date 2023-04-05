@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/framework7.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+	
+        <title>Calculadora IRRF</title>												
+		
+    </head>
+    <body>
+			<div id="app">
+		  
+				<!-- Statusbar overlay -->
+				<div class="statusbar"></div>
+
+					<!-- Your main view, should have "view-main" class -->
+					<div class="view view-main">
+						<!-- Initial Page, "data-name" contains page name -->
+						<div data-name="Calculadora FGTS" class="page">
+
+							<!-- NAVBAR -->
+							<div class="navbar" style="background:#013aed;">
+								<div class="navbar-inner">
+									<div class="left">
+										<a id="setavoltar0" href="/Home/" class="link"><img style="" src="img/seta-voltar.png" width="50"></i></a>
+									</div>
+									<div class="title"><center><b style="color:#ffffff;"><h5>CALCULADORA IRRF</h5></b></center></div>
+								</div>
+							</div>
+							
+							<!-- Open Popup -->
+							<div class="popup popup-about">
+								<div class="page-content">
+									<div class="block">
+										<!-- Close Popup -->
+										<p><a class="link popup-close" href="#">Voltar</a></p>							
+									</div>
+								</div>
+							</div>
+
+							
+							<!-- Scrollable page content -->
+							<div class="page-content" style="background:#ffffff;">
+							<div style="margin-top:10px;background:#ffffff;"><center><b style="margin-top:20px;color:#2c2b28;letter-spacing:1px;font:  bold 14px/30px ;">PREENCHA OS DADOS ABAIXO</b></center></div>
+							<div style="margin-top:10px;background:#ffffff;"><center><b style="margin-top:20px;color:#2c2b28;letter-spacing:1px;font:  bold 14px/30px ;">Dúvida no preenchimento? Clique no ícone:</b><a href="#" class="popover-open" data-popover=".popover"><img  src="img/question.png" width="44"></a></center></div>
+							<!-- CONTEUDO DA PAGINA AQUI -->
+									<div  class="list no-hairlines-md" style="background:#ffffff;">
+										<ul>
+											<li class="item-content item-input">
+												<div class="item-media">
+													<img src="gif/extract-search.gif" width="44">
+												</div>
+													<div class="item-inner">
+														<div class="item-title item-floating-label"><label for="dinheiro">R$</label> Salário Bruto</div>
+															<div class="item-input-wrap">
+																<input type="tel" placeholder="Informe seu Salário Bruto" id="salario">
+																<span class="input-clear-button"></span>
+															</div>
+													</div>
+											</li>
+											<li class="item-content item-input">
+												<div class="item-media">
+													<img src="gif/extract-search.gif" width="44">
+												</div>
+													<div class="item-inner">
+														<div class="item-title item-floating-label"><label for="dinheiro"></label> N° de Dependentes </div>
+															<div class="item-input-wrap">
+																<input type="number" style="display:inline-block" placeholder="Informe o n° de dependentes" id="dependentes">
+																<span class="input-clear-button"></span>
+															</div>
+													</div>
+											</li>
+											<li class="item-content item-input">
+												<div class="item-media">
+													<img src="gif/extract-search.gif" width="44">
+												</div>
+													<div class="item-inner">
+														<div class="item-title item-floating-label"><label for="dinheiro">R$</label> Previdência Oficial</div>
+															<div class="item-input-wrap">
+																<input  type="tel" placeholder="Contribuição INSS ou Regime Próprio" id="prev">
+																<span class="input-clear-button"></span>
+															</div>
+													</div>
+											</li>
+											<li class="item-content item-input">
+												<div class="item-media">
+													<img src="gif/extract-search.gif" width="44">
+												</div>
+													<div class="item-inner">
+														<div class="item-title item-floating-label"><label for="dinheiro">R$</label> Pensão Alimentícia</div>
+															<div class="item-input-wrap">
+																<input  type="tel"   placeholder="Informe o valor da pensão" id="pensao">
+																<span class="input-clear-button"></span>
+															</div>
+													</div>
+											</li>
+											<li class="item-content item-input"> 
+												<div class="item-media">
+													<img src="gif/extract-search.gif" width="44">
+												</div>
+													<div class="item-inner">
+														<div class="item-title item-floating-label"><label for="dinheiro">R$</label> Outras Deduções</div>
+															<div class="item-input-wrap">
+																<input  type="tel"   class="dinheiro form-control" style="display:inline-block" placeholder="Ex: Previdência Privada" id="indeniza">
+																<span class="input-clear-button"></span>
+															</div>
+													</div>
+											</li>
+											
+										</ul>
+									</div>
+									
+									<!-- ADICIONANDO UM BOTÃO PARA O CALCULO DO IRPF COM POPUP -->
+									<div class="block">
+									<div><button style="background:#ff9800;" type="button" class="link popup-open  col button button-outline button-round"   data-popup=".popup-about" id="calculadorairrf"><b style=" color:#2c2b28;letter-spacing:1px;font:  bold 14px/30px;">CALCULAR IRRF</b></button></div>
+									</div>
+									<!-- NAVBAR POPUP -->					
+										<div class="popup popup-about">
+											<div class="navbar" style="background:#013aed;">
+												<div class="navbar-inner">	
+													<div class="left">
+														<a id="setavoltar1" href="/CalculadoranovoIRRF/" class="link popup-close"><img style="" src="img/seta-voltar.png" width="50"></a>
+													</div>												
+													<div class="title"> SIMULAÇÃO IRRF</div>									
+												</div>
+											</div>
+										
+											
+											<!-- PAGE CONTENT POPUP -->	
+											<div class="page-content" style="padding:0px; background:#ffffff">									
+												<div class="block">
+												
+														<div class="blocK">
+															<!-- SALDO FGTS - MÊS DE SAQUE-->
+															<div class="row">
+															<div class="col">
+																		<center><h3  style="border-bottom:3px solid black;color:#352de1;margin-left: 10 px;font-size: 16px;"><b>IR RETIDO NA FONTE:</b></h3></center>
+																		<!-- VALOR DO IMPOSTO -->
+																		<center><h4 id="valorIRPF" class="bold" style="color:#ff9800;font-size: 18px;"><b>
+																		</b></h4></center>
+															</div>
+															
+															<div class="col">																		
+																		<center><h3 style="border-bottom:3px solid black;color:#352de1;margin-left: 10 px;font-size: 16px;"><b>ALÍQUOTA EFETIVA</b></h3></center>
+																		<!-- VALOR DA ALÍQUOTA EFETIVA -->
+																		<center><h4  id="aliquotaefetiva" class="bold" style="color:#ff9800;font-size: 18px;"><b>
+																		</b></h4></center>
+															</div>
+															</div>
+															<center class="block"><h3  style="border-bottom:3px solid black;color:#352de1;font-size:16px;"><b>SALÁRIO LÍQUIDO:</b></h3></center>
+																		<!-- SALARIO LIQUIDO -->
+																		<center><h4  id="salarioliquido" class="bold" style="color:#ff9800;font-size: 18px;"><b>
+																		</b></h4></center>	
+														</div>
+														
+														<div class="block">
+															<h3  style="color:#0D47A1;margin-left: 7 px;border-bottom: 3px solid gray;"><b>PARCELALA DO SALÁRIO INCIDENTE DE IR:</b></h3>
+																						<!-- Parcela do salário Isenta de IR: -->
+																						<div  style="color:#f0873c;margin-left: 7 px;font-size: 16px;" id="baseIRPF">
+																						</div>
+																																			
+																						<h3  style="color:#0D47A1;margin-left: 7 px;border-bottom: 3px solid gray;"><b>PARCELA DO SALÁRIO ISENTA DE IR:</b></h3>
+																						<!-- Parcela do salário Isenta de IR: -->
+																						<div style="color:#f0873c;margin-left: 7 px;font-size: 16px;" id="isencao">
+																						</div>
+																						
+																						<h3  style="color:#0D47A1;margin-left: 7 px;border-bottom: 3px solid gray;"><b>VALOR ISENTO DE IR POR DEPENDENTE:</b></h3>
+																						<!-- Valor isento em razão dos dependentes: -->
+																						<div style="color:#f0873c;margin-left: 7 px;font-size: 16px;" id="isencaodependentes"><p>
+																						</p></div>							
+														</div>
+														
+														
+														<div class="row block">
+															<!-- Close Popup -->
+															<div class="col">
+															<center><a id="btnnovasimulacao1" class="link popup-close col button button-fill button-round" href="/#calculadoraIRRF/" style="color:#ffffff; background:#0D47A1;">Nova Simulação</a></center>		
+															</div>
+															<!-- Gif Dinheiro voando -->
+															<div class="col">
+															<center><img src="gif/irpf.gif" width="80"></center>
+															</div>																														
+														</div>
+														
+												</div><br>	
+											</div>
+											
+											
+												
+										</div>
+										
+										
+												<div class="popover block">
+												  <div class="popover-inner">
+													<p align="justfy"><b>Salário Bruto:</b> Informe o valor total da receita do seu contracheque;</p>
+													<p align="justfy"><b>Número de Dependentes:</b> Informe o número de pessoas cadastradas como seus dependentes para desconto do Imposto de Renda no seu contracheque;</p>
+													<p align="justfy"><b>Previdência Oficial:</b> Informe o valor de contribuição previdenciaria (INSS ou regime próprio) discriminado no seu contracheque;</p>
+													<p align="justfy"><b>Pensão:</b> Caso você pague pensão e ela venha descontada no seu contracheque, informe o valor;</p>
+													<p align="justfy"><b>Outras Deduções:</b> Caso você apresente em seu contracheque outras receitas dedutíveis como auxílio alimentação, previdência privada ou outra, informe o valor;</p>
+													<p align="justfy"><b>Para valores nulos, coloque 0 (zero) para prosseguir com o cálculo.</b></p><br>
+												  </div>
+												</div>
+									
+									
+									
+									<p id="isencaoprev" class="desaparecer"></p>
+									<p id="isencaopensao" class="desaparecer"></p>
+									<p id="isencaoindeniza" class="desaparecer"></p>
+									<p id="SALARIO" class="desaparecer"></p>
+
+									<!-- GIF CoinBag -->
+									<div style="padding:0px;"><center><center><img src="gif/Leão.gif" width="130"></center></div>
+											
+							<!-- FINAL DA PAGE CONTENT -->
+							</div>
+							
+
+								
+
+						</div>
+
+					</div>  
+													
+			</div>
+			
+			
+      
+		<script type="text/javascript" src="js/framework7.js"></script>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/my-app.js"></script>
+		
+			
+				
+		 <script type="text/javascript" src="cordova.js"></script>
+		
+        
+    </body>
+</html>
