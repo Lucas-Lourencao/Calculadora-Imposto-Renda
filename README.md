@@ -2,12 +2,12 @@
  Projeto criado com o CORDOVA. Um App que permite realizar o cálculo do Imposto de Renda Retido na Fonte de uma Pessoa Física. Detalhes no README.
  
 <p align="center">
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucas-lourencao/income-tax-calculator">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucas-lourencao/Calculadora-Imposto-Renda">
 <img alt="GitHub" src="https://img.shields.io/github/license/lucas-lourencao/Calculadora-Imposto-Renda">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/lucas-lourencao/income-tax-calculator">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/lucas-lourencao/Calculadora-Imposto-Renda">
 </p>
 
-## Img/Gif:
+<img src="gif/Animação.gif/>
 
 ## Página Web:
 
