@@ -6,7 +6,7 @@ Projeto criado com o CORDOVA. Um App que permite realizar o cálculo do Imposto 
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucas-lourencao/Calculadora-Imposto-Renda">
 <img alt="GitHub" src="https://img.shields.io/github/license/lucas-lourencao/Calculadora-Imposto-Renda">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/lucas-lourencao/Calculadora-Imposto-Renda">
-</p>
+</p><br><br>
 
 <center>
 <img src="www/gif/Animação.gif"/>
