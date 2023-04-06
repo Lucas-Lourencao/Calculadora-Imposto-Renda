@@ -1,16 +1,16 @@
-# App Meu Imposto - Calculadora-Imposto-Renda
+<h1 style="text-align:center;">App Meu Imposto - Calculadora-Imposto-Renda</h1>
 
-Projeto criado com o CORDOVA. Um App que permite realizar o cálculo do Imposto de Renda Retido na Fonte de uma Pessoa Física. Detalhes no README.
+<p style="text-align:center;">Projeto criado com o CORDOVA. Um App que permite realizar o cálculo do Imposto de Renda Retido na Fonte de uma Pessoa Física. Detalhes no README.</p>
 
 <p align="center">
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucas-lourencao/Calculadora-Imposto-Renda">
-<img alt="GitHub" src="https://img.shields.io/github/license/lucas-lourencao/Calculadora-Imposto-Renda">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/lucas-lourencao/Calculadora-Imposto-Renda">
-</p>
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Lucas-Lourencao/Calculadora-Imposto-Renda">
+<img alt="GitHub" src="https://img.shields.io/github/license/Lucas-Lourencao/Calculadora-Imposto-Renda">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/Lucas-Lourencao/Calculadora-Imposto-Renda">
+</p><br><br>
 
-<center>
-<img src="www/gif/Animação.gif"/>
-</center>
+
+<p align="center"><img src="www/gif/Animação.gif"/></p>
+
 
 ## Página Web:
 
