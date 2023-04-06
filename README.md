@@ -8,9 +8,7 @@
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/Lucas-Lourencao/Calculadora-Imposto-Renda">
 </p><br><br>
 
-
-<p align="center"><img src="www/gif/Animação.gif"/></p>
-
+<p align="center"><img src="www/img/Animação.gif"/></p>
 
 ## Página Web:
 
